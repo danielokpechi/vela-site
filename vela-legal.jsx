@@ -128,7 +128,7 @@ window.VLegal = function VLegal() {
       </Section>
 
       <Section title="11. Contact">
-        <P>Questions about these Terms may be directed to <a href="mailto:hello@vela.app" style={{ color: GREEN }}>hello@vela.app</a>.</P>
+        <P>Questions about these Terms may be directed to <a href="mailto:velaspends@gmail.com" style={{ color: GREEN }}>velaspends@gmail.com</a>.</P>
       </Section>
     </div>
   );
@@ -183,7 +183,7 @@ window.VLegal = function VLegal() {
           'Object to or restrict processing',
           'Lodge a complaint with the ICO (ico.org.uk)',
         ]}/>
-        <P>Exercise your rights by emailing <a href="mailto:hello@vela.app" style={{ color: GREEN }}>hello@vela.app</a>. We will respond within 30 days.</P>
+        <P>Exercise your rights by emailing <a href="mailto:velaspends@gmail.com" style={{ color: GREEN }}>velaspends@gmail.com</a>. We will respond within 30 days.</P>
       </Section>
 
       <Section title="8. Data Retention">
@@ -195,7 +195,7 @@ window.VLegal = function VLegal() {
       </Section>
 
       <Section title="10. Contact">
-        <P>Data controller: Vela, London, United Kingdom. Email: <a href="mailto:hello@vela.app" style={{ color: GREEN }}>hello@vela.app</a>.</P>
+        <P>Data controller: Vela, London, United Kingdom. Email: <a href="mailto:velaspends@gmail.com" style={{ color: GREEN }}>velaspends@gmail.com</a>.</P>
       </Section>
     </div>
   );
@@ -248,7 +248,7 @@ window.VLegal = function VLegal() {
       </Section>
 
       <Section title="5. Contact">
-        <P>Questions about cookies: <a href="mailto:hello@vela.app" style={{ color: GREEN }}>hello@vela.app</a>.</P>
+        <P>Questions about cookies: <a href="mailto:velaspends@gmail.com" style={{ color: GREEN }}>velaspends@gmail.com</a>.</P>
       </Section>
     </div>
   );
@@ -309,7 +309,7 @@ window.VLegal = function VLegal() {
       </Section>
 
       <Section title="12. Contact">
-        <P><a href="mailto:hello@vela.app" style={{ color: GREEN }}>hello@vela.app</a></P>
+        <P><a href="mailto:velaspends@gmail.com" style={{ color: GREEN }}>velaspends@gmail.com</a></P>
       </Section>
     </div>
   );
@@ -381,7 +381,7 @@ window.VLegal = function VLegal() {
               <div style={{ fontSize: 12, fontWeight: 700, color: GREEN, marginBottom: 8 }}>Questions?</div>
               <div style={{ fontSize: 13, color: MUTE, lineHeight: 1.5 }}>
                 Email us at{' '}
-                <a href="mailto:hello@vela.app" style={{ color: GREEN, textDecoration: 'none', fontWeight: 600 }}>hello@vela.app</a>
+                <a href="mailto:velaspends@gmail.com" style={{ color: GREEN, textDecoration: 'none', fontWeight: 600 }}>velaspends@gmail.com</a>
               </div>
             </div>
           )}
