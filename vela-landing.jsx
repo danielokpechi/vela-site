@@ -1456,7 +1456,7 @@ window.VLanding = function VLanding() {
             {
               h: 'CONTACT', links: [
                 { label: 'FAQ', href: '#faq' },
-                { label: 'hello@vela.app', href: 'mailto:hello@vela.app' },
+                { label: 'velaspends@gmail.com', href: 'mailto:velaspends@gmail.com' },
                 { label: 'Twitter / X', href: '#' },
                 { label: 'Instagram', href: '#' },
               ]
