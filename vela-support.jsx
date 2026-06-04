@@ -49,11 +49,11 @@ window.VSupport = function VSupport() {
     },
     {
       q: 'Does Vela connect to my bank account?',
-      a: 'No. You log expenses by voice, manually, or via Apple Pay automation. No bank connection means no security risk and nothing to break when your bank changes their API.',
+      a: 'No. You log expenses by voice or manually. No bank connection means no security risk and nothing to break when your bank changes their API.',
     },
     {
-      q: 'How do I set up Apple Pay automatic logging?',
-      a: 'Go to Settings → Automations → Apple Pay. You\'ll be guided through a one-time Apple Shortcuts setup. After that, every tap-to-pay is logged automatically.',
+      q: 'Will there be Apple Pay automatic logging?',
+      a: 'Yes — automatic logging after every Apple Pay tap is on the roadmap for v2. We\'ll announce it when it\'s ready.',
     },
     {
       q: 'How do I share expenses with a partner?',

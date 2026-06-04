@@ -848,112 +848,6 @@ window.VLanding = function VLanding() {
           </div>
         </Card>
 
-        {/* ─────────── APPLE PAY ─────────── */}
-        <Card>
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : '1.05fr 0.95fr',
-            gap: isMobile ? 32 : 64,
-            alignItems: 'center',
-          }}>
-            <div>
-              <SplitH a="Pay with Apple Pay." b="Log automatically." size={62} />
-              <Sub>
-                Every time you tap to pay, Vela logs the expense. No more forgetting, no end-of-day catch-up. Your spending is tracked the moment it happens.
-              </Sub>
-              <CheckList items={[
-                'Instant post-payment automation',
-                'Zero-effort tracking',
-                'Works with Apple Shortcuts™',
-              ]} />
-              <div style={{
-                marginTop: 28, display: 'inline-flex', alignItems: 'center', gap: 8,
-                color: INK, fontWeight: 700, fontSize: 14, cursor: 'pointer',
-              }}>
-                Show all ways to automate
-                <span style={{
-                  width: 22, height: 22, borderRadius: 11, background: CREAM,
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                }}>
-                  <window.VIcon name="chevD" size={12} color={INK} stroke={2.4} />
-                </span>
-              </div>
-            </div>
-            <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', '--cardBg': PAPER, minHeight: isMobile ? 200 : 'auto' }}>
-              <div style={{ position: 'relative', display: 'inline-block', transform: 'rotate(-6deg)' }}>
-                <div style={{
-                  position: 'absolute', inset: '-30px',
-                  background: `radial-gradient(ellipse 60% 60% at 50% 50%, rgba(15,15,15,0.08) 0%, transparent 65%)`,
-                  pointerEvents: 'none',
-                }} />
-                <div style={{
-                  width: isMobile ? 200 : 240, height: isMobile ? 120 : 150,
-                  borderRadius: 22,
-                  background: 'linear-gradient(180deg, #fff 0%, #F5F4F1 100%)',
-                  boxShadow: '0 30px 60px -20px rgba(15,15,15,0.2), 0 0 0 1px rgba(15,15,15,0.05)',
-                  position: 'relative', padding: 20,
-                }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                    <div style={{ fontSize: 11, fontWeight: 700, color: 'rgba(15,15,15,0.5)' }}>VELA · UK</div>
-                  </div>
-                  <div style={{ fontSize: 24, fontWeight: 800, fontFamily: t.display, marginTop: isMobile ? 10 : 18, letterSpacing: -0.6 }}>£12.40</div>
-                  <div style={{ fontSize: 11, color: 'rgba(15,15,15,0.5)', marginTop: 2 }}>Tap your phone to pay</div>
-                  <div style={{
-                    position: 'absolute', top: 16, right: 16,
-                    width: 32, height: 32, borderRadius: 16, background: '#0F4FAA',
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  }}>
-                    <window.VIcon name="sound" size={14} color="#fff" />
-                  </div>
-                </div>
-                {!isMobile && (
-                  <div style={{ position: 'absolute', top: -40, right: -60, transform: 'rotate(20deg)' }}>
-                    <div style={{
-                      width: 90, height: 170, borderRadius: 18, padding: 5, background: '#0F0F0F',
-                      boxShadow: '0 20px 40px -10px rgba(15,15,15,0.3)',
-                    }}>
-                      <div style={{
-                        width: '100%', height: '100%', borderRadius: 14, overflow: 'hidden',
-                        background: 'linear-gradient(180deg, #2A9D6E 0%, #1F7B55 100%)',
-                        display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                        gap: 8, color: '#fff',
-                      }}>
-                        <div style={{ fontSize: 11, fontWeight: 700, opacity: 0.85 }}>Hold near</div>
-                        <div style={{
-                          width: 30, height: 30, borderRadius: 8,
-                          background: 'rgba(255,255,255,0.18)',
-                          display: 'flex', alignItems: 'center', justifyContent: 'center',
-                          border: '1.5px solid rgba(255,255,255,0.5)',
-                        }}>
-                          <window.VIcon name="sound" size={16} color="#fff" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-                <div style={{
-                  position: 'absolute', bottom: isMobile ? -40 : -50, left: isMobile ? 0 : -10,
-                  background: '#fff', padding: '10px 14px', borderRadius: 14,
-                  boxShadow: `0 10px 24px -6px rgba(15,15,15,0.15), 0 0 0 1px ${SUBTLE_BORDER}`,
-                  display: 'flex', alignItems: 'center', gap: 10,
-                  transform: 'rotate(6deg)',
-                }}>
-                  <div style={{
-                    width: 22, height: 22, borderRadius: 11, background: GREEN,
-                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  }}>
-                    <window.VIcon name="check" size={12} color="#fff" stroke={2.4} />
-                  </div>
-                  <div>
-                    <div style={{ fontSize: 11.5, fontWeight: 700 }}>Logged £12.40</div>
-                    <div style={{ fontSize: 9.5, color: MUTE }}>Shopping · just now</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Card>
-
         {/* ─────────── ASK VELA ─────────── */}
         <Card>
           <div style={{
@@ -1144,9 +1038,9 @@ window.VLanding = function VLanding() {
         {/* ─────────── UNLIMITED WAYS TO TRACK ─────────── */}
         <Card>
           <div style={{ textAlign: 'center', marginBottom: isMobile ? 32 : 48 }}>
-            <OneH size={56}>Unlimited ways to track.</OneH>
+            <OneH size={56}>More ways to track.</OneH>
             <Sub max={600} align="center">
-              Vela on iOS connects to <b>Apple Shortcuts™</b>, turning any trigger into an expense entry. Set it once, track forever.
+              Beyond voice and manual entry, Vela connects to Apple Shortcuts™ so you can build automations that fit your life. Coming in v2.
             </Sub>
           </div>
           <div style={{
@@ -1155,12 +1049,12 @@ window.VLanding = function VLanding() {
             gap: isMobile ? 10 : 16,
           }}>
             {[
-              { icon: 'home', t: 'Apple Pay Automation', d: 'Logs your expenses right after you pay.' },
               { icon: 'sparkle', t: 'Photo → Transaction', d: 'Snap a receipt; OCR extracts the details.' },
               { icon: 'micF', t: 'Action Button Voice', d: 'Press the side button, speak your expense, done.' },
               { icon: 'chart', t: 'Screenshot → Entry', d: 'Screenshot a purchase confirmation; it becomes an entry.' },
               { icon: 'arrow', t: 'Email Automation', d: 'Turn bank e-mails into transactions automatically.' },
               { icon: 'sound', t: 'Message Trigger', d: 'Turn bank SMS notifications into transactions.' },
+              { icon: 'home', t: 'Apple Pay Automation', d: 'Automatic logging after every tap-to-pay. Coming in v2.' },
             ].map((f, i) => (
               <div key={i} className="vela-lift" data-vela-reveal="" data-vela-delay={i * 80} style={{
                 padding: isMobile ? 18 : 24, borderRadius: 20, background: PAPER,
@@ -1223,7 +1117,7 @@ window.VLanding = function VLanding() {
           </div>
           <div style={{ maxWidth: 760, margin: '0 auto' }}>
             {[
-              { q: 'Does Vela connect to my bank account?', a: "No — you log expenses by voice, manually, or via Apple Pay automation. No bank connection means no security risk and nothing to disconnect when your bank changes their API." },
+              { q: 'Does Vela connect to my bank account?', a: "No — you log expenses by voice or manually. No bank connection means no security risk and nothing to disconnect when your bank changes their API." },
               { q: 'Is my data private and secure?', a: 'All data is encrypted in transit and at rest. You can export or delete everything at any time from Settings.' },
               { q: 'What happens after the 7-day trial?', a: "You're moved to the free plan automatically. No charge, no card on file to forget about." },
               { q: 'Is there an Android version?', a: "Not yet. Vela is iPhone & iPad only for now — we're focused on getting the iOS experience right before we expand. Android is on the roadmap for later this year." },
