@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /.git/
+Disallow: /.claude/
 
+# Sitemaps
 Sitemap: https://velaapps.co.uk/sitemap.xml
