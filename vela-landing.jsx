@@ -10,6 +10,7 @@ window.VLanding = function VLanding() {
   const PAPER = '#FFFFFF';
   const MUTE = 'rgba(26,26,26,0.58)';
   const SUBTLE_BORDER = 'rgba(26,26,26,0.07)';
+  const APP_STORE_URL = 'https://apps.apple.com/us/app/vela-ai-expense-tracker/id6769665558';
 
   const [open, setOpen] = React.useState(null);
   const [inputMode, setInputMode] = React.useState('speak');
@@ -139,13 +140,13 @@ window.VLanding = function VLanding() {
   );
 
   const StoreBadge = ({ tone = 'ink' }) => (
-    <div style={{
+    <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" style={{
       display: 'inline-flex', alignItems: 'center', gap: 11,
       padding: '12px 22px', borderRadius: 14,
       background: tone === 'ink' ? INK : PAPER,
       color: tone === 'ink' ? '#fff' : INK,
       border: tone === 'ink' ? 'none' : `1px solid ${SUBTLE_BORDER}`,
-      cursor: 'pointer',
+      cursor: 'pointer', textDecoration: 'none',
     }}>
       <svg viewBox="0 0 24 24" width="22" height="22" fill={tone === 'ink' ? '#fff' : INK} aria-hidden="true">
         <path d="M17.05 12.04c-.02-2.07 1.69-3.06 1.77-3.11-.97-1.41-2.47-1.6-3.01-1.62-1.28-.13-2.5.75-3.15.75-.66 0-1.66-.74-2.73-.72-1.4.02-2.7.82-3.42 2.07-1.46 2.54-.37 6.3 1.05 8.36.7 1.01 1.52 2.15 2.6 2.11 1.04-.04 1.44-.68 2.7-.68 1.25 0 1.61.68 2.71.66 1.12-.02 1.83-1.02 2.51-2.04.79-1.17 1.12-2.31 1.14-2.37-.03-.01-2.18-.84-2.2-3.32zm-2.08-6.1c.57-.69.96-1.66.85-2.62-.83.03-1.83.55-2.42 1.24-.53.61-.99 1.59-.87 2.54.93.07 1.87-.47 2.44-1.16z" />
@@ -154,7 +155,7 @@ window.VLanding = function VLanding() {
         <div style={{ fontSize: 9.5, fontWeight: 500, opacity: 0.78, letterSpacing: 0.4 }}>Download on the</div>
         <div style={{ fontSize: 17, fontWeight: 700, marginTop: -1, letterSpacing: -0.3 }}>App Store</div>
       </div>
-    </div>
+    </a>
   );
 
   // ─────────────────────────────────────────────────────────────
@@ -545,14 +546,15 @@ window.VLanding = function VLanding() {
           )}
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" style={{
               display: 'inline-flex', alignItems: 'center', gap: 8,
               padding: isMobile ? '8px 14px' : '10px 18px',
               borderRadius: 100, background: INK, color: '#fff',
               fontSize: isMobile ? 12 : 13.5, fontWeight: 700, cursor: 'pointer',
+              textDecoration: 'none',
             }}>
               Download
-            </div>
+            </a>
             {/* Hamburger — mobile only */}
             {isMobile && (
               <div onClick={() => setNavOpen(o => !o)} style={{
